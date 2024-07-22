@@ -1,0 +1,722 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  background-color: rgb(157, 169, 223);
+}
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/image/sushi (5).jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: bgChange 15s linear infinite;
+}
+
+@keyframes bgChange {
+  0% {
+    background-image: url('/image/sushi (5).jpeg');
+  }
+  25% {
+      background-image: url('/image/sushi (6).jpeg');
+  }
+  50% {
+      background-image: url('/image/sushi (7).jpeg');
+  }
+  75% {
+      background-image: url('/image/sushi (4).jpeg');
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #faca78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-bottom: 0px;
+}
+
+.content p {
+  font-size: 20px;
+  width: 60%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Memberikan jarak antar tombol */
+  margin-top: 20px;
+}
+
+.content button {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #794a3a;
+  padding: 14px 22px;
+  border-radius: 25px;
+  transition: 1s;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content button:hover {
+  background-color: #fff;
+  color: #f2745f;
+}
+
+.content button a {
+  color: #faca78;
+  text-decoration: none;
+}
+
+/*navbar & header*/
+.navbar {
+  height: 90px;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo h1 {
+  font-family: "Kaushan Script";
+  font-size: 40px;
+  color: #6295c5;
+}
+
+.logo .header-logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #6295c5;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Kaushan Script";
+  margin-right: 15px;
+}
+
+.auth-links a:hover {
+  color: #000000;
+}
+
+.navbar ul{
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding-right: 20px;
+  overflow: hidden;
+  display: flex;
+}
+.header-list ul li a {
+  float: left;
+  padding: 60px 40px;
+  color: #f2745f;
+  transition: all 0.3s ease; 
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header-list ul li a:hover {
+  color: #ffffff; 
+}
+
+
+/*home*/
+main.mt-6{
+margin-top: 1.5rem;
+margin-bottom: 100px;
+}
+.home{
+  height: 400px;
+  margin: 30px 100px;
+}
+.history h2 {
+  color: #f7f7f7;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 80px;
+  margin-left: 60px;
+  font-family: "Kaushan Script";
+  padding-left: 40px;
+  margin-right: 600px;
+  transition: transform 0.5s ease; 
+  transition: color 0.5s ease; 
+}
+
+.history h2:hover {
+  transform: scale(1.1); 
+  color: #5d7fa0;
+}
+
+.history p{
+  padding-right: 500px;
+  margin-left: 60px;
+  text-align:justify;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.history img{
+  height: 400px;
+  width: 400px;
+  float: right;
+}
+.history img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease; 
+}
+
+/*about*/
+.about{
+  height: 400px;
+  margin: 0px 70px;
+}
+.about h2{
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  margin-left: 60px;
+  font-family: "Kaushan Script";
+  padding-left: 460px;
+  transition: transform 0.5s ease; 
+  transition: color 0.5s ease; 
+}
+.about h2:hover {
+  transform: scale(1.1); 
+  color:  #477cad;
+}
+.about p{
+  margin-left: 500px;
+  text-align:justify;
+  font-size: 18px;
+  color: #ffffff;
+}
+.about img{
+  height: 400px;
+  width: 400px;
+  float: left;
+  border-radius: 25%;
+  margin-top: 50px;
+}
+.about img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease; 
+}
+
+
+/*menu*/
+.menu{
+  height: 2870px;
+}
+.flip{
+  background-color: rgb(157, 169, 223);
+}
+.menu-title{
+  text-align: center;
+}
+.menu-title h2{
+  font-size: 50px;
+  color: #faca78;
+}
+.menu-title h4{
+  font-size: 30px;
+  color: #794a3a;
+}
+.menu-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 5rem;
+  align-items: center;
+}
+.row{
+  position: relative;
+  padding: 10px 35px 40px;
+  border-radius: 3rem;
+}
+.row img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.row img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+
+.row h5{
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #faca78;
+}
+.row p{
+  color: #faca78;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 1.1rem;
+}
+.in-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.in-text .price h6{
+  font-size: 17px;
+  color: #faca78;
+  font-weight: 600;
+}
+.in-text .s-btn a {
+  display: inline-block;
+  padding: 9px 23px;
+  background: #faca78;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 3rem;
+  transition: all .50s ease;
+  text-decoration: none;
+}
+
+.in-text .s-btn a:hover {
+  background-color: #f2745f;
+  color: #000000; 
+}
+.top-icon{
+  position: absolute;
+  top: 30px;
+  left: 35px;
+}
+.top-icon i{
+  font-size: 22px;
+  color: #faca78;
+}
+
+/*reservation*/
+.card img img{
+  background-color: #f2745f;
+}
+.reservation h2{
+  color: #f2745f;
+  font-size: 40px;
+  font-family: "Kaushan Script";
+  text-align: center;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: 420px 420px;
+}
+.card-content{
+  background: #fff;
+  height: 490px;
+  width: 928px;
+}
+.card-content h4{
+  text-align: center;
+  color: #f2745f;
+  padding: 25px 0 10px 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.form-row{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+form select, form input{
+  display: block;
+  width: 100%;
+  margin: 15px 12px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+  color: #000000;
+}
+form input[type = submit]{
+  color: #fff;
+  background: #f2745f;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form input[type = submit]:hover{
+  opacity: 0.9;
+}
+@media(max-width: 992px){
+  .card-container{
+      grid-template-columns: 100%;
+      width: 100vw;
+  }
+  .card-img{
+      height: 330px;
+  }
+}
+
+/*contact*/
+.contact{
+  background-image: linear-gradient(13deg, #f1f6ff, #f2745f);
+}
+.sectionHeader{
+  font-size: 30px;
+  margin-left: 50px;
+  color: #000000;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.heading,.sub-heading{
+  margin-top: .5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.heading{
+  font-size: 2.5em;
+  color: #000000;
+  margin-left: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.sub-heading{
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.contactForm{
+  display: grid;
+  gap: 3em;
+  grid-template-columns: 420px 420px;
+}
+.contactForm img {
+  margin-left: 200px;
+  height: 400px;
+  transition: transform 0.5s ease; 
+}
+
+.contactForm img:hover {
+  transform: scale(1.1); 
+}
+.contactForm form{
+  margin-left: 40px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+form{
+  width: 100%;
+  margin-top: 3em;
+}
+textarea.input{
+  margin-left: 13px;
+}
+.para{
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.para2{
+  text-align: left;
+}
+
+.input{
+  width: 95%;
+  max-width: 700px;
+  border: none;
+  font-size: .9rem;
+  padding: 1em;
+  outline: none;
+  background-color: #eee;
+  color: #020101;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  margin-bottom: 1em;
+
+}
+
+.input:focus{
+  border: 1px solid #ffffff;
+}
+
+.input::placeholder{
+  text-transform: capitalize;
+}
+
+.submit{
+  background-color: #ffffff;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.map-container{
+  position: relative;
+  width: 300%;
+  height: 500px;
+  margin-top: 0px;
+}
+
+.map{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+}
+.contactMethod{
+  display: flex;
+  margin-top: 2em 6em;
+  text-align: left;
+}
+
+.method{
+  display: flex;
+  align-items: center;
+}
+
+.contactIcon{
+  font-size: 2rem;
+  color: #ffffff;
+  width: 70px;
+}
+/*me*/
+.my-img{
+  margin: 40px 340px;
+}
+.my-img img{
+  border-radius: 50%;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.my-img img:hover {  
+  opacity: 0.7;  
+  transform: scale(1.1); 
+  border: 5px solid #ffffff;
+}
+.desk h1{
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin: 30px 340px 0px 340px;
+  padding-left: 30px;
+}
+.desk p{
+  color: #ffffff;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding-left: 20px;
+}
+.desk .social-icon{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+/*footer*/
+footer{
+  position: relative;
+  width: 1248px;
+  background: #ffffff;
+  min-height: 30px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .social-icon, footer .menu2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+footer .social-icon li, footer .menu2 li{
+  list-style: none;
+}
+footer .social-icon li a{
+  font-size: 2em;
+  color: #000000;
+  margin: 0 10px;
+  display:inline-block;
+  transition: 0.5s;
+}
+footer .social-icon li a:hover {
+  color: #ffffff; 
+  transform: scale(1.1); 
+}
+
+footer .menu2 li a{
+  font-size: 1.2em;
+  color: #000000;
+  margin: 0 10px;
+  display:inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-family: "Kaushan Script";
+}
+footer .menu2 li a:hover {
+  opacity: 1; 
+  color: #ffffff; 
+  font-weight: bold; 
+}
+
+footer p{
+  color: #000000;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/*reservations*/
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Header style */
+h1 {
+  color: #333; /* Dark gray text */
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+/* Form label style */
+label {
+  display: block;
+  font-size: 0.875rem;
+  color: #444; /* Darker gray text */
+  margin-bottom: 8px;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+input[type="number"],
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 0.875rem;
+  color: #333; /* Dark gray text */
+}
+
+/* Focus style for inputs and textarea */
+input:focus,
+textarea:focus {
+  border-color: rgb(157, 169, 223); /* Pink border on focus */
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(157, 169, 223); /* Pink shadow on focus */
+}
+
+/* Error message style */
+p.text-red-500 {
+  color: #ff4d4d; /* Red text */
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+/* Submit button style */
+button {
+  background-color: rgb(157, 169, 223);/* blue background */
+  color: #ffffff; /* White text */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: rgb(157, 169, 223);/* Darker pink on hover */
+}
+
+/* Button focus style */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(157, 169, 223);
+}
+form{
+  width: 100%;
+  margin-top: 0px;
+}
+div.py-12{
+  background-color: rgb(157, 169, 223);
+}
